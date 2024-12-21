@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+NL+Guides&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+*::-webkit-scrollbar-track {
+  background-color: #3c4266;
+}
+*::-webkit-scrollbar-thumb {
+  background: #33adff;
+  border-radius: 10px;
+  cursor: grab;
+}
+.dark {
+  background: #1c1c1c;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  border: 2px solid #000;
+  padding: 18px;
+  align-items: center;
+  justify-content: space-between;
+  background: #e7ecff;
+  color: #000;
+  border-bottom: 4px solid #33adff;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.dark header {
+  background: #000;
+  color: aliceblue;
+}
+
+#header-logo {
+  font-size: 2.3rem;
+  font-family: "Merriweather", serif;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+.dark #header-logo {
+  color: aliceblue;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.dark .nav-links {
+  color: aliceblue;
+}
+
+.nav-links::after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 100%;
+  background: #33adff;
+  bottom: -4px;
+  border-radius: 20px;
+  left: 0;
+  transform: scale(0);
+  transform-origin: left;
+  transition: 0.3s ease-in-out;
+}
+.nav-links:hover {
+  transform: scale(1.2);
+}
+.nav-links:hover::after {
+  transform: scale(1);
+}
+.dark-switch {
+  height: 30px;
+  width: 60px;
+  background: #3c4266;
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.dark-switch input {
+  display: none;
+}
+.dark-switch span {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  border-radius: 50%;
+  background: yellow;
+  scale: 1.2;
+  box-shadow: 0px 0px 30px yellow;
+  transition: 0.3s ease-in-out;
+}
+
+#dark-mode-toggle:checked ~ .dark-switch-circle {
+  transform: translateX(80%);
+  box-shadow: 0px 0px 30px #fff;
+  background: #fff;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 90px;
+}
