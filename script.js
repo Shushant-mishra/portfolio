@@ -8,7 +8,7 @@ modeToggleSwitch.addEventListener("change", () => {
     body.classList.remove("dark");
   }
 });
-
+  
 const mobileNavBtn = document.getElementById("mobile-nav-trigger");
 const mobileNav = document.querySelector(".mobile-nav");
 mobileNavBtn.addEventListener("change", () => {
