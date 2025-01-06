@@ -269,6 +269,7 @@ button {
   transition: 0.5s;
   font-size: 17px;
   border-radius: 0.4em;
+  padding-top:5px;
 }
 
 button p {
@@ -323,10 +324,10 @@ button:hover {
 }
 
 .button2 > svg {
-  height: 30px;
+  height: 20px;
   position: absolute;
   padding: 0px 5px;
-  margin-top: -4px;
+  margin-top: 5px;
 }
 
 .button2:active {
