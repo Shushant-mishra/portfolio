@@ -269,7 +269,7 @@ button {
   transition: 0.5s;
   font-size: 17px;
   border-radius: 0.4em;
-  padding-top:5px;
+  padding-top:25px;
 }
 
 button p {
@@ -306,7 +306,7 @@ button:hover svg {
 button:hover {
   background-color: #bc2a8d;
 }
-/* From Uiverse.io by NelsonDJCR */ 
+
 .button2 {
   display: inline-block;
   transition: all 0.2s ease-in;
@@ -319,8 +319,7 @@ button:hover {
   border-radius: 0.5em;
   background: #e8e8e8;
   border: 1px solid #e8e8e8;
-  box-shadow: 6px 6px 12px #c5c5c5,
-             -6px -6px 12px #ffffff;
+  padding-top:25px;
 }
 
 .button2 > svg {
