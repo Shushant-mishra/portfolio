@@ -296,6 +296,33 @@ section {
   animation: bounce 0.5s ease-in-out;
 }
 
+#about h1 {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: bolder;
+  color:  var(--main-color);
+}
+#about p {
+  font-size: 1.4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container{
+  display:flex;
+  align-items: center;
+  gap:30px;
+}
+
+.about-image {
+  height: auto;
+  width: 300px;
+  border: solid 2px var(--main-color);
+  border-radius: 50%;  
+  box-shadow: 0px 0px 30px var(--main-color);
+ 
+}
+
+
 @keyframes bounce {
   0% {
     scale: 1;
