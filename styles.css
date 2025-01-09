@@ -36,6 +36,10 @@ a {
   color: #fff;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   display: flex;
   border: 2px solid #000;
@@ -297,31 +301,114 @@ section {
 }
 
 #about h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-style: italic;
   font-weight: bolder;
-  color:  var(--main-color);
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 20px;
 }
 #about p {
   font-size: 1.4rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.container{
-  display:flex;
+.container {
+  display: flex;
   align-items: center;
-  gap:30px;
+  gap: 30px;
 }
 
 .about-image {
   height: auto;
   width: 300px;
   border: solid 2px var(--main-color);
-  border-radius: 50%;  
+  border-radius: 50%;
   box-shadow: 0px 0px 30px var(--main-color);
- 
 }
 
+#education h1 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bolder;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.education-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 100px;
+  width: 100%;
+}
+
+.line {
+  display: flex;
+  height: 80vh;
+  width: 2px;
+  background: var(--main-color);
+  position: relative;
+}
+.educationContainer {
+  position: absolute;
+  left: -40px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.education-content {
+  display: flex;
+  width: 70vw;
+  gap: 30px;
+}
+
+.education-image {
+  height: 80px;
+  width: 95px;
+  border: 5px solid var(--light-back);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-back);
+}
+.education-text {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--light-back);
+  padding: 20px;
+  border-radius: 20px;
+  border-bottom: 2px solid var(--main-color);
+  box-shadow: 0px 2px 6px var(--main-color);
+}
+.dark .education-text {
+  background: var(--dark-back);
+}
+
+.education-text .arrow {
+  position: absolute;
+  top: 30px;
+  left: -30px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid var(--light-back);
+  transform: rotate(-90deg);
+}
+.dark .arrow {
+  border-bottom: 20px solid var(--dark-back);
+}
+
+.education-text p {
+  font-size: 1.2rem;
+}
 
 @keyframes bounce {
   0% {
