@@ -345,7 +345,7 @@ section {
 
 .line {
   display: flex;
-  height: 60vh;
+  height: 80vh;
   width: 2px;
   background: var(--main-color);
   position: relative;
