@@ -343,13 +343,13 @@ section {
   width: 100%;
 }
 
-.line {
-  display: flex;
-  height: 80vh;
-  width: 2px;
-  background: var(--main-color);
-  position: relative;
-}
+    .line {
+      display: flex;
+      height:55vh;
+      width: 2px;
+      background: var(--main-color);
+      position: relative;
+    }
 .educationContainer {
   position: absolute;
   left: -40px;
