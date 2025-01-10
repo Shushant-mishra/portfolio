@@ -350,6 +350,7 @@ section {
   background: var(--main-color);
   position: relative;
 }
+
 .educationContainer {
   position: absolute;
   left: -40px;
