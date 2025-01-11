@@ -105,12 +105,11 @@
               <div class="education-text">
                 <span class="arrow"></span>
                 <p>
-                  <<<<<<< HEAD I completed my 10th standard from Pioneer Convent
-                  Senior Secondary School, Bakkarwala, New Delhi-110043 in the
-                  academic year 2021-22 ======= I completed my 10th standard
-                  from Pioneer Convent Senior Secondary School, Bakkarwala, New
-                  Delhi-110043 in the academic year 2021-22 >>>>>>>
-                  56bca110950978a381f62f646c72d3c054251016
+                  I completed my 10th standard from Pioneer Convent Senior
+                  Secondary School, Bakkarwala, New Delhi-110043 in the academic
+                  year 2021-22. I completed my 10th standard from Pioneer
+                  Convent Senior Secondary School, Bakkarwala, New Delhi-110043
+                  in the academic year 2021-22
                 </p>
               </div>
             </div>
@@ -124,12 +123,11 @@
               <div class="education-text">
                 <span class="arrow"></span>
                 <p>
-                  <<<<<<< HEAD I completed my 12th standard from Pioneer Convent
-                  Senior Secondary School, Bakkarwala, New Delhi-110043 in the
-                  academic year 2023-24 ======= I completed my 12th standard
-                  from Pioneer Convent Senior Secondary School, Bakkarwala, New
-                  Delhi-110043 in the academic year 2023-24 >>>>>>>
-                  56bca110950978a381f62f646c72d3c054251016
+                  I completed my 12th standard from Pioneer Convent Senior
+                  Secondary School, Bakkarwala, New Delhi-110043 in the academic
+                  year 2023-24. I completed my 12th standard from Pioneer
+                  Convent Senior Secondary School, Bakkarwala, New Delhi-110043
+                  in the academic year 2023-24
                 </p>
               </div>
             </div>
@@ -157,21 +155,39 @@
 
     <section id="contact">
       <h1>Contact</h1>
-      <div class="contactme">
-        <form class="form">
+      <div class="contact-content">
+        <img src="./images/contactme.jpg" />
+        <form method="POST" id="form">
+          <input
+            type="hidden"
+            name="access_key"
+            value="807aa062-f5d3-402c-9e9e-7cb13a99ac8a"
+          />
+          <label>
+            Enter Name
+            <input
+              placeholder="Shushant mishra"
+              type="text"
+              name="name"
+              required
+            />
+          </label>
           <label>
             Enter Email
-            <input type="email" placeholder="Enter email" />
+            <input
+              placeholder="shushantmishra@gmail.com"
+              type="email"
+              name="email"
+              required
+            />
           </label>
           <label>
-            Type message
-            <textarea placeholder="Type message..."></textarea>
+            <p>Enter message</p>
+            <textarea placeholder="Hi..." name="message" required></textarea>
           </label>
-          <button type="submit">Submit</button>
+          <button type="submit">Send</button>
+          <p id="result"></p>
         </form>
-      </div>
-      <div class="contact-image">
-        <img src="./images/contactme.jpg" />
       </div>
     </section>
     <footer>

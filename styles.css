@@ -418,13 +418,22 @@ section {
 }
 
 #contact h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: var(--main-color);
   font-style: italic;
 }
 
-.form {
+.contact-content {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px;
+}
+
+#form {
+  display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 20px;
   background: var(--light-back);
@@ -435,11 +444,11 @@ section {
   border: 2px solid;
   box-shadow: 10px 10px 10px var(--light-back);
 }
-.dark .form {
+.dark #form {
   background: var(--dark-back);
 }
 
-.form label {
+#form label {
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
@@ -447,54 +456,67 @@ section {
   font-weight: bolder;
 }
 
-.form label input {
+#form label input {
   font-size: 1.2rem;
   padding: 10px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid var(--dark-back);
+  color: #000;
+}
+.dark #form label input{
+  background: #000000;
+  border: 1px solid var(--light-back);
+  color: #fff;
 }
 
-.form label input:focus,
-.form label textarea:focus {
+#form label input:focus,
+#form label textarea:focus {
   outline: 3px solid var(--main-color);
 }
 
-.form label textarea {
-  font-size: 1.2rem;
-  line-height: 5;
+#form label textarea {
   padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  height: 200px;
   max-width: 100%;
   min-width: 100%;
-  text-align: start;
-  border-radius: 10px;
-  border: none;
+}
+.dark #form label textarea{
+  background: #000;
+  color: #fff;
 }
 
-.form button {
+#form button {
   padding: 10px;
   border-radius: 10px;
   font-size: 1.2rem;
   background: var(--main-color);
   border: 2px solid #fff;
-  cursor: pointer
+  cursor: pointer;
+  box-shadow: 0.25em 0.25em;
+  transition: 0.1s ease-in-out;
 }
-.contact-image {
-  display:flex;
-  flex-direction: row;
-  height: 100%;
-  flex: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#form button:active{
+  box-shadow: 0.05em 0.05em;
+  transform: translate(0.20em, 0.20em);
 }
-.contact-image img {
-  height: 300px;
-  width: 300px;
+
+#result {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.dark #form button {
+  color: #fff;
+}
+
+.contact-content img {
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
   box-shadow: 0px 0px 30px var(--main-color);
 }
-
 
 footer {
   display: flex;
