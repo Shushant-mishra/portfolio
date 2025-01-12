@@ -41,15 +41,15 @@ mobileNavBtn.addEventListener("change", () => {
 });
 
 // Contact form
-const form = document.getElementById("form");
+const submitBtn = document.getElementById("submitBtn");
 const result = document.getElementById("result");
 
-form.addEventListener("submit", function (e) {
+submitBtn.addEventListener("click", function (e) {
   e.preventDefault();
   const formData = new FormData(form);
   const object = Object.fromEntries(formData);
   const json = JSON.stringify(object);
-  result.innerHTML = "Please wait...";
+  submitBtn.innerHTML = "Please wait...";
 
   fetch("https://api.web3forms.com/submit", {
     method: "POST",
@@ -62,6 +62,7 @@ form.addEventListener("submit", function (e) {
     .then(async (response) => {
       let json = await response.json();
       if (response.status == 200) {
+        submitBtn.innerHTML = "Submit";
         result.innerHTML = "Form submitted successfully";
       } else {
         console.log(response);

@@ -157,7 +157,7 @@
       <h1>Contact</h1>
       <div class="contact-content">
         <img src="./images/contactme.jpg" />
-        <form method="POST" id="form">
+        <form method="POST" id="form" action="https://api.web3forms.com/submit">
           <input
             type="hidden"
             name="access_key"
@@ -185,7 +185,7 @@
             <p>Enter message</p>
             <textarea placeholder="Hi..." name="message" required></textarea>
           </label>
-          <button type="submit">Send</button>
+          <button id="submitBtn">Send</button>
           <p id="result"></p>
         </form>
       </div>
